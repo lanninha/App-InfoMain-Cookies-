@@ -11,7 +11,6 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-
         supportActionBar?.hide()
         window.statusBarColor = Color.parseColor("#EFD6C1")
     }
