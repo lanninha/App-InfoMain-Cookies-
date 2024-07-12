@@ -47,4 +47,4 @@ class MainActivity2 : AppCompatActivity() {
         // Move o cursor para o final do texto
         textoSenha.setSelection(textoSenha.text.length)
     }
-}
+} 
