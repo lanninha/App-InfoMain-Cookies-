@@ -12,6 +12,7 @@ import android.text.method.PasswordTransformationMethod
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 
 class MainActivity2 : AppCompatActivity() {
 
@@ -23,7 +24,8 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        val botao: Button = findViewById(R.id.button1)
+        val texto:TextView = findViewById(R.id.textView3)
+        val botao:Button = findViewById(R.id.button1)
 
         textoSenha = findViewById(R.id.editTextTextPassword)
         imagemMostrarSenha = findViewById(R.id.imagemMostrarSenha)
@@ -36,9 +38,14 @@ class MainActivity2 : AppCompatActivity() {
         supportActionBar?.hide()
         window.statusBarColor = Color.parseColor("#EFD6C1")
 
-        botao.setOnClickListener{
+        texto.setOnClickListener{
             val segundaTela = Intent(this, MainActivity3::class.java)
             startActivity(segundaTela)
+        }
+
+        botao.setOnClickListener{
+            val telaLogin = Intent(this, MainActivity4::class.java)
+            startActivity(telaLogin)
         }
     }
 
