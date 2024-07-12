@@ -1,5 +1,6 @@
 package com.example.cookies
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -8,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 
@@ -22,6 +24,8 @@ class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
+
+        val botao: Button = findViewById(R.id.button3)
 
         textoSenha1 = findViewById(R.id.editTextTextPassword1)
         imagemMostrarSenha1 = findViewById(R.id.imagemMostrarSenha1)
@@ -40,6 +44,11 @@ class MainActivity3 : AppCompatActivity() {
         }
         supportActionBar?.hide()
         window.statusBarColor = Color.parseColor("#EFD6C1")
+
+        botao.setOnClickListener{
+            val segundaTela = Intent(this, MainActivity4::class.java)
+            startActivity(segundaTela)
+        }
     }
     private fun alternarVisibilidadeSenha(textoSenha :EditText , imagemMostrarSenha: ImageView, senhaVisivel:Boolean) {
         if (senhaVisivel) {
@@ -49,7 +58,7 @@ class MainActivity3 : AppCompatActivity() {
         } else {
             // Esconder senha
             textoSenha.transformationMethod = PasswordTransformationMethod.getInstance()
-            imagemMostrarSenha.setImageResource(R.drawable.invisibleeye)
+            imagemMostrarSenha.setImageResource(R.drawable.olhinhofechado)
         }
 
         // Move o cursor para o final do texto

@@ -39,13 +39,14 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="126dp"
-        android:layout_height="121dp"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059"
+        app:layout_constraintVertical_bias="0.027"
         app:srcCompat="@drawable/whatsapp_image_2024_07_10_at_14_45_42" />
 
     <TextView
@@ -244,7 +245,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword1"
         app:layout_constraintTop_toTopOf="@+id/editTextTextPassword1"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <ImageView
         android:id="@+id/imagemMostrarSenha2"
