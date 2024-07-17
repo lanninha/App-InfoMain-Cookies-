@@ -310,4 +310,18 @@
         app:srcCompat="@drawable/image_removebg_preview__19_" />
 
 
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/vizuNav"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/menu_main"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

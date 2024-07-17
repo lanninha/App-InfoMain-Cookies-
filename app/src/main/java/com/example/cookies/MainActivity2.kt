@@ -20,6 +20,7 @@ class MainActivity2 : AppCompatActivity() {
     private lateinit var imagemMostrarSenha: ImageView
 
     private var senhaVisivel: Boolean = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
